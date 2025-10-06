@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "首頁";
+    Layout = "_Layout"; // 明確指定 Layout
+}
+
+<div class="container mt-4">
+    <h2 class="mb-3">🏠 系統首頁</h2>
+
+    <div class="card shadow-sm p-4">
+        <p>歡迎登入系統，@Context.Session.GetString("FullName")！</p>
+        <p>目前角色：<strong>@Context.Session.GetString("Role")</strong></p>
+        <p>帳號名稱：<strong>@Context.Session.GetString("Username")</strong></p>
+    </div>
+</div>

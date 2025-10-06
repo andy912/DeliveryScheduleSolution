@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using DeliveryScheduleSolution.Services;
-using DeliveryScheduleSolution.Models;
 
 namespace DeliveryScheduleSolution.Controllers
 {
@@ -13,7 +12,11 @@ namespace DeliveryScheduleSolution.Controllers
             _memberService = memberService;
         }
 
-        public IActionResult Login() => View();
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View(); // 對應 Views/Account/Login.cshtml
+        }
 
         [HttpPost]
         public async Task<IActionResult> Login(string username, string password)
@@ -23,7 +26,6 @@ namespace DeliveryScheduleSolution.Controllers
             {
                 HttpContext.Session.SetString("Username", member.Username);
                 HttpContext.Session.SetString("Role", member.Role);
-                HttpContext.Session.SetString("FullName", member.FullName);
                 return RedirectToAction("Index", "Home");
             }
 

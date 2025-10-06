@@ -2,19 +2,25 @@ using DeliveryScheduleSolution.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 註冊 MenuService
-builder.Services.AddScoped<MenuService>();
+// 加入 MVC Controller 與 View
+builder.Services.AddControllersWithViews();
 
-// Add services to the container.
+// 加入 Razor Pages
 builder.Services.AddRazorPages();
 
-//啟用 Controllers (API)
-builder.Services.AddControllers();
+// 加入 HttpContextAccessor（解決 _Layout.cshtml 無法使用 @inject 的問題）
+builder.Services.AddHttpContextAccessor();
 
-//啟用 Session
+// 啟用 Session
 builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession(options => { options.IdleTimeout = TimeSpan.FromHours(1); });
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromHours(1);
+});
 
+// 註冊 Service (DI)
+builder.Services.AddScoped<MenuService>();
+builder.Services.AddScoped<MemberService>();
 
 var app = builder.Build();
 
@@ -23,24 +29,20 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
 }
+
 app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
-// 註冊 API Controllers
-app.MapControllers();
-
-//將 Razor Pages 路由註冊
-app.MapRazorPages();
-
-//將 API Controllers 路由註冊
-app.MapControllers();
-
-// Optional: 測試簡單 GET
-app.MapGet("/api/ping", () => "pong");
-
-//啟用 Session
+// Session 要在 Routing 前後都可用，建議放在這裡
 app.UseSession();
+
+app.UseAuthorization();
+
+// 預設導向登入頁面
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Account}/{action=Login}/{id?}");
+
 
 app.Run();

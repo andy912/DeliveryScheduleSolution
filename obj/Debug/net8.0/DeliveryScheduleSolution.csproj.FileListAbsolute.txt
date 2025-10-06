@@ -160,3 +160,4 @@ G:\程式練習\C_Sharp\DeliveryScheduleSolution\obj\Debug\net8.0\refint\Deliver
 G:\程式練習\C_Sharp\DeliveryScheduleSolution\obj\Debug\net8.0\DeliveryScheduleSolution.pdb
 G:\程式練習\C_Sharp\DeliveryScheduleSolution\obj\Debug\net8.0\DeliveryScheduleSolution.genruntimeconfig.cache
 G:\程式練習\C_Sharp\DeliveryScheduleSolution\obj\Debug\net8.0\ref\DeliveryScheduleSolution.dll
+G:\程式練習\C_Sharp\DeliveryScheduleSolution\obj\Debug\net8.0\DeliveryScheduleSolution.sourcelink.json
