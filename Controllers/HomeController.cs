@@ -6,6 +6,13 @@ namespace DeliveryScheduleSolution.Controllers
     {
         public IActionResult Index()
         {
+            var username = HttpContext.Session.GetString("Username");
+            if (string.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            ViewBag.Username = username;
             return View();
         }
     }

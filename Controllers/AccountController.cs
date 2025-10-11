@@ -1,14 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DeliveryScheduleSolution.Models;
 using DeliveryScheduleSolution.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DeliveryScheduleSolution.Controllers
 {
     public class AccountController : Controller
     {
         private readonly MemberService _memberService;
+        private readonly RoleService _roleService;
 
-        public AccountController(MemberService memberService)
+        public AccountController(RoleService roleService, MemberService memberService)
         {
+            _roleService = roleService;
             _memberService = memberService;
         }
 
@@ -37,6 +40,27 @@ namespace DeliveryScheduleSolution.Controllers
         {
             HttpContext.Session.Clear();
             return RedirectToAction("Login");
+        }
+
+        // 角色管理首頁
+        [HttpGet]
+        public async Task<IActionResult> ManageRoles(string searchName)
+        {
+            var members = await _memberService.GetMembersAsync(searchName);
+            var roles = await _roleService.GetRolesAsync();
+            ViewBag.Roles = roles;
+
+            if (string.IsNullOrEmpty(searchName))
+            {
+                // 沒有搜尋，不回傳任何會員
+                ViewBag.HasSearched = false;
+                return View(new List<Member>());
+            }
+            else {
+                ViewBag.HasSearched = true;
+                return View(members);
+            }
+                
         }
     }
 }

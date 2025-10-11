@@ -7,32 +7,28 @@
       "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\views\\account\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:views\\account\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,97 +38,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-06T05:56:54.336Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T05:55:50.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Member.cs",
-              "DocumentMoniker": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Models\\Member.cs",
-              "RelativeDocumentMoniker": "Models\\Member.cs",
-              "ToolTip": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Models\\Member.cs",
-              "RelativeToolTip": "Models\\Member.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T05:40:45.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MemberService.cs",
-              "DocumentMoniker": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Services\\MemberService.cs",
-              "RelativeDocumentMoniker": "Services\\MemberService.cs",
-              "ToolTip": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Services\\MemberService.cs",
-              "RelativeToolTip": "Services\\MemberService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T05:39:53.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
               "ToolTip": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABwAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAADYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T13:42:14.17Z",
+              "WhenOpened": "2025-10-11T11:49:32.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
-              "ToolTip": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-01T13:42:52.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
               "ToolTip": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-28T11:40:43.063Z",
+              "WhenOpened": "2025-10-11T10:06:42.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManageRoles.cshtml",
+              "DocumentMoniker": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Views\\Account\\ManageRoles.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ManageRoles.cshtml",
+              "ToolTip": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Views\\Account\\ManageRoles.cshtml",
+              "RelativeToolTip": "Views\\Account\\ManageRoles.cshtml",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAQwG8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-11T04:26:46.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MemberService.cs",
+              "DocumentMoniker": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Services\\MemberService.cs",
+              "RelativeDocumentMoniker": "Services\\MemberService.cs",
+              "ToolTip": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Services\\MemberService.cs",
+              "RelativeToolTip": "Services\\MemberService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAmwDAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T03:54:02.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MenuService.cs",
+              "DocumentMoniker": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Services\\MenuService.cs",
+              "RelativeDocumentMoniker": "Services\\MenuService.cs",
+              "ToolTip": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Services\\MenuService.cs",
+              "RelativeToolTip": "Services\\MenuService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T03:55:09.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Services\\RoleService.cs",
+              "RelativeDocumentMoniker": "Services\\RoleService.cs",
+              "ToolTip": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Services\\RoleService.cs",
+              "RelativeToolTip": "Services\\RoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T03:54:30.997Z",
               "EditorCaption": ""
             },
             {
@@ -143,7 +126,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-28T11:38:39.743Z",
               "EditorCaption": ""

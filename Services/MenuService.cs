@@ -14,11 +14,23 @@ namespace DeliveryScheduleSolution.Services
                 ?? throw new ArgumentNullException("Connection string 'DefaultConnection' not found.");
         }
 
-        public async Task<List<MenuItem>> GetMenusAsync()
+
+        /// <summary>
+        /// 根據角色取得對應可見選單（含階層）
+        /// </summary>
+        public async Task<List<MenuItem>> GetMenusAsync(string role)
         {
             using var conn = new SqlConnection(_connectionString);
-            var sql = "SELECT Id, Title, Icon, Url, ParentId FROM Menus ORDER BY ParentId, Id";
-            var flatList = (await conn.QueryAsync<MenuItem>(sql)).ToList();
+            // 這裡同時查詢 Menus 與 Permissions，讓只有該角色有權限的選單才會被載入
+            var sql = @"
+                SELECT DISTINCT m.Id, m.Title, m.Icon, m.Url, m.ParentId
+                FROM Menus m
+                INNER JOIN Permissions p ON 
+                    (m.Title = p.MenuTitle OR (m.Url IS NOT NULL AND m.Url = p.MenuUrl))
+                WHERE p.Role = @Role
+                ORDER BY m.ParentId, m.Id;
+            ";
+            var flatList = (await conn.QueryAsync<MenuItem>(sql, new { Role = role })).ToList();
 
             // 組裝樹狀
             var lookup = flatList.ToDictionary(m => m.Id, m => m);

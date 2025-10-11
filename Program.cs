@@ -21,6 +21,7 @@ builder.Services.AddSession(options =>
 // 註冊 Service (DI)
 builder.Services.AddScoped<MenuService>();
 builder.Services.AddScoped<MemberService>();
+builder.Services.AddScoped<RoleService>();
 
 var app = builder.Build();
 
@@ -36,6 +37,7 @@ app.UseRouting();
 
 // Session 要在 Routing 前後都可用，建議放在這裡
 app.UseSession();
+
 
 app.UseAuthorization();
 

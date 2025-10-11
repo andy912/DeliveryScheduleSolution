@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeliveryScheduleSolution")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09a04fe7b9da004a52210826a4095a864848c5b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aff0eebfa4cdd3177261ada115ab5fffbb28a46a")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeliveryScheduleSolution")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeliveryScheduleSolution")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

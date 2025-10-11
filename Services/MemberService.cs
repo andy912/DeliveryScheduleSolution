@@ -46,5 +46,21 @@ namespace DeliveryScheduleSolution.Services
             return builder.ToString();
         }
 
+        public async Task<List<Member>> GetMembersAsync(string? name)
+        {
+            using var conn = new SqlConnection(_connectionString);
+            var sql = "SELECT MemberId, Username, Role FROM Members";
+            if (!string.IsNullOrEmpty(name))
+                sql += " WHERE Username LIKE @name";
+            return (await conn.QueryAsync<Member>(sql, new { name = $"%{name}%" })).ToList();
+        }
+
+        public async Task UpdateRoleAsync(int id, string role)
+        {
+            using var conn = new SqlConnection(_connectionString);
+            var sql = "UPDATE Members SET Role = @role WHERE Id = @id";
+            await conn.ExecuteAsync(sql, new { id, role });
+        }
+
     }
 }
