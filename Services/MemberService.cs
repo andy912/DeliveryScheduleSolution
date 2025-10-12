@@ -19,7 +19,7 @@ namespace DeliveryScheduleSolution.Services
             using var conn = new SqlConnection(_connectionString);
             string passwordHash = ComputeSha256Hash(password);
 
-            var sql = @"SELECT MemberId, Username, FullName, Role
+            var sql = @"SELECT MemberId, Username, Role
                         FROM Members
                         WHERE Username=@Username AND PasswordHash=@PasswordHash";
 
@@ -58,8 +58,33 @@ namespace DeliveryScheduleSolution.Services
         public async Task UpdateRoleAsync(int id, string role)
         {
             using var conn = new SqlConnection(_connectionString);
-            var sql = "UPDATE Members SET Role = @role WHERE Id = @id";
+            var sql = "UPDATE Members SET Role = @role WHERE MemberId = @id";
             await conn.ExecuteAsync(sql, new { id, role });
+        }
+
+        // 新增會員
+        public async Task AddMemberAsync(Member member)
+        {
+            using var conn = new SqlConnection(_connectionString);
+
+            if (member == null)
+                throw new ArgumentNullException(nameof(member));
+
+            // 將密碼加密成 SHA256
+            member.PasswordHash = ComputeSha256Hash(member.Password); // 假設 Member 有 PasswordHash 欄位
+
+            // 檢查帳號是否已存在
+            var exists = await conn.QueryFirstOrDefaultAsync<int>(
+                "SELECT COUNT(1) FROM Members WHERE Username = @Username",
+                new { member.Username });
+
+            if (exists > 0)
+                throw new InvalidOperationException("使用者帳號已存在");
+
+            // 新增會員
+            var sql = @"INSERT INTO Members (Username, PasswordHash, Role)
+                    VALUES (@Username, @PasswordHash, @Role)";
+            await conn.ExecuteAsync(sql, member);
         }
 
     }

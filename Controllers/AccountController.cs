@@ -62,5 +62,53 @@ namespace DeliveryScheduleSolution.Controllers
             }
                 
         }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateRole(int id, string role)
+        {
+            // 呼叫 Service 更新資料庫
+            await _memberService.UpdateRoleAsync(id, role);
+
+            TempData["Message"] = "角色更新成功";
+            return RedirectToAction("ManageRoles");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddUser(string username, string role)
+        {
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(role))
+            {
+                TempData["Message"] = "帳號與角色不可為空";
+                return RedirectToAction("ManageRoles");
+            }
+
+            // 隨機產生密碼
+            string password = GenerateRandomPassword(8);
+
+            // 建立會員物件
+            var newMember = new Member
+            {
+                Username = username,
+                Role = role,
+                Password = password // 假設 Member 有 Password 欄位
+            };
+
+            await _memberService.AddMemberAsync(newMember);
+
+            // 將密碼存到 TempData 顯示
+            TempData["NewPassword"] = password;
+            TempData["Message"] = $"新增使用者 {username} 成功";
+
+            return RedirectToAction("ManageRoles");
+        }
+
+        // 隨機產生密碼方法
+        private string GenerateRandomPassword(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var random = new Random();
+            return new string(Enumerable.Repeat(chars, length)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
     }
 }
