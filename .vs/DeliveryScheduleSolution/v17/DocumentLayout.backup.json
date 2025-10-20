@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\views\\account\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:views\\account\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\views\\account\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|solutionrelative:views\\account\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E131B847-3B3E-4332-B0DE-BE97573DE153}|DeliveryScheduleSolution.csproj|g:\\\u7A0B\u5F0F\u7DF4\u7FD2\\c_sharp\\deliveryschedulesolution\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -59,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ManageRoles.cshtml",
               "DocumentMoniker": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Views\\Account\\ManageRoles.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\ManageRoles.cshtml",
@@ -78,7 +78,7 @@
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
               "ToolTip": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEUAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-11T11:49:32.183Z",
               "EditorCaption": ""
@@ -98,13 +98,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MemberService.cs",
               "DocumentMoniker": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Services\\MemberService.cs",
               "RelativeDocumentMoniker": "Services\\MemberService.cs",
               "ToolTip": "G:\\\u7A0B\u5F0F\u7DF4\u7FD2\\C_Sharp\\DeliveryScheduleSolution\\Services\\MemberService.cs",
               "RelativeToolTip": "Services\\MemberService.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAmwDUAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAmwDwAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-11T03:54:02.902Z",
               "EditorCaption": ""
