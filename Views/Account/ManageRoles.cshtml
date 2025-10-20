@@ -1,0 +1,175 @@
+﻿@using DeliveryScheduleSolution.Models
+@model IEnumerable<Member>
+@{
+    ViewData["Title"] = "角色管理";
+    Layout = "_Layout"; // 明確指定 Layout
+    var roles = ViewBag.Roles as List<string>;
+}
+<style>
+    /* ===== 共用風格 ===== */
+    body {
+        background: #f5f7fa;
+    }
+
+    h3.gradient-text {
+        background: linear-gradient(90deg, #0072E3, #D2E9FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    /* ===== Card 外觀 ===== */
+    .gradient-card {
+        border: 2px solid;
+        border-image: linear-gradient(90deg, #0072E3, #D2E9FF) 1;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background: #fff;
+    }
+
+    .gradient-card .card-header {
+            background: linear-gradient(90deg, #0072E3, #D2E9FF);
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    /* ===== 查詢按鈕 ===== */
+    .btn-primary {
+        background: linear-gradient(90deg, #0072E3, #D2E9FF);
+        border: none;
+        transition: 0.3s ease;
+    }
+
+    .btn-primary:hover {
+            background: linear-gradient(90deg, #0072E3, #D2E9FF);
+    }
+
+    /* ===== 下拉選單 ===== */
+    .form-select {
+        border-radius: 6px;
+    }
+
+    .table {
+        table-layout: fixed; /* 固定欄寬分配 */
+        width: 100%; /* 撐滿容器寬度 */
+    }
+
+        .table th, .table td {
+            text-align: center; /* 水平置中 */
+            vertical-align: middle; /* 垂直置中 */
+        }
+    
+</style>
+
+<div class="container mt-5">
+    <h3 class="gradient-text mb-4">使用者管理</h3>
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Message"]
+            @if (TempData["NewPassword"] != null)
+            {
+                <br />
+                <strong>密碼:</strong>
+ 
+                @TempData["NewPassword"]
+            }
+        </div>
+    }
+
+    <!-- 🔹 新增使用者 Card -->
+    <div class="card border-primary mb-4 shadow-sm">
+        <div class="card-header bg-primary text-white">
+            新增使用者
+        </div>
+        <div class="card-body">
+            <form method="post" action="/Account/AddUser" class="row g-2 align-items-center">
+                <div class="col-md-3">
+                    <input type="text" id="username" name="username" class="form-control" placeholder="帳號" required />
+                </div>
+                <div class="col-md-3">
+                    <select id="role" name="role" class="form-select" required>
+                        <option value="">請選擇角色</option>
+                        @foreach (var role in ViewBag.Roles)
+                        {
+                            <option value="@role">@role</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-success w-100">新增使用者</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 🔹 查詢區 Card -->
+    <div class="card border-primary mb-4 shadow-sm">
+        <div class="card-header bg-primary text-white">
+            使用者設定
+        </div>
+        <div class="card-body">
+            <form method="get" asp-action="ManageRoles" class="d-flex flex-wrap align-items-center">
+                <input type="text" name="searchName" class="form-control me-2 mb-2" style="max-width: 300px;" placeholder="輸入會員名稱搜尋" />
+                <button type="submit" class="btn btn-primary mb-2">查詢</button>
+            </form>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>帳號</th>
+                        <th>角色設定</th>
+                        <th>重設密碼</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (!ViewBag.HasSearched)
+                    {
+                        <tr>
+                            <td colspan="3" class="text-muted">請輸入使用者資料進行搜尋</td>
+                        </tr>
+                    }
+
+                    else if (Model.Any())
+                    {
+                        @foreach (var member in Model)
+                        {
+                            <tr>
+                                <td>@member.Username</td>
+                                <td>
+                                    <form method="post" action="/Account/UpdateRole" class="d-flex justify-content-center align-items-center">
+                                        <input type="hidden" name="id" value="@member.MemberId" />
+                                        <select name="role" class="form-select me-2" style="width:130px;">
+                                            @foreach (var role in ViewBag.Roles)
+                                            {
+                                                <option value="@role" @(member.Role == role ? "selected" : "")>@role</option>
+                                            }
+                                        </select>
+                                        <button type="submit" class="btn btn-primary mb-2">儲存</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <form method="post" asp-action="ResetPassword" class="d-flex justify-content-center align-items-center">
+                                        <input type="hidden" name="id" value="@member.MemberId" />
+                                        <button type="submit" class="btn btn-primary mb-2">儲存</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="3" class="text-muted">查無會員資料</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</div>
